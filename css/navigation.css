@@ -1,0 +1,133 @@
+.sidebar{
+	width: 180px;
+	display: flex;
+	margin-top: 40px;
+}
+
+.main__container{
+	margin-bottom: 45px;
+}
+
+.text-headline{
+	margin-bottom: 44px;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 49px;
+	font-style: normal; 
+}
+
+
+.menu__item{
+	margin-bottom: 30px;
+	flex-direction: column;
+}
+
+.content{
+	width: 880px;
+}
+
+.banner{
+	margin-top: 7px;
+}
+
+.menu__item-link{
+	position: relative;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 12px;
+	color: #4b73b5;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	padding-left: 37px;
+}
+
+.tarifs__name{
+	text-align: center;
+}
+
+
+.menu__item-link:before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform:translateY(-50%);
+	display: block;
+	background-repeat: no-repeat;
+}
+
+
+/*  чтобы все стало черным */
+
+.menu__item-active .menu__item-link, .menu__item-link:hover{
+	color: black;
+}
+
+/*---стили иконок-----*/
+ 
+.menu__item-link--main:before{
+	height: 21px;
+	width: 21px;
+	background-image: url(../images-body/nav/main_icon.png);
+	background-repeat: no-repeat;
+}
+
+.menu__item-link--team:before{
+	width: 24px;
+	height: 19px;
+	background-image: url(../images-body/nav/team_icon.png);
+	background-repeat: no-repeat;
+}
+
+.menu__item-link--comments:before{
+	width: 24px;
+	height: 19px;
+	background-image: url(../images-body/nav/feed_icon.png);
+	background-repeat: no-repeat;
+}
+
+
+
+.menu__item-active .menu__item-link--main-active{
+	background-image: url(../images-body/nav/main_icon-h.png);
+	background-repeat: no-repeat;
+}
+
+.menu__item-active .menu__item-link--team-active{
+	background-image: url(../images-body/nav/team_icon-h.png);
+	background-repeat: no-repeat;
+}
+
+.menu__item-active .menu__item-link--comments-active{
+	background-image: url(../images-body/nav/feed_icon-h.png);
+	background-repeat: no-repeat;
+}
+
+
+/* ------HOVER AFFECTS------- */
+
+.menu__item-link--main:hover:before{
+	background-image: url(../images-body/nav/main_icon-h.png);
+	background-repeat: no-repeat;
+}
+
+
+.menu__item-link--team:hover:before{
+	background-image: url(../images-body/nav/team_icon-h.png);
+	background-repeat: no-repeat;
+}
+
+
+.menu__item-link--comments:hover:before{
+	background-image: url(../images-body/nav/feed_icon-h.png);
+	background-repeat: no-repeat;
+}
+
+
+.main_container:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+

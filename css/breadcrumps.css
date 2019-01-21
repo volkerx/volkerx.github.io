@@ -1,0 +1,31 @@
+.breadcrumps{
+	margin-bottom: 9px;
+    margin-top: 40px;
+}
+
+.breadcrumps__list {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+/*     color: rgba(28, 91, 195, 0.8); */
+}
+
+.breadcrumps__list-item {
+    text-decoration: underline;
+    margin-right: 6px;
+}
+
+.breadcrumps__list-item:before {
+    content: "/";
+}
+
+.breadcrumps__list-item:first-child:before {
+    content: "";
+}
+
+.breadcrumps__list-item:last-child {
+    text-decoration: none;
+}
